@@ -2,7 +2,7 @@
 # This is a YAML-formatted file.
 
 # Domain on which reports will be available
-domain: .forgeops.com
+domain: forgeops.com
 
 # Gatling image with tests.
 # Dockerfile for this image can be found in forgeops/docker/gatling
@@ -38,6 +38,9 @@ benchmark:
   #
   # For IG it is:
   # - ig.IGReverseProxyWebSim
+  # 
+  # To run multiple tests, syntax is as following:
+  # testname: "am.AMAccessTokenSim am.AMRestAuthNSim"
 
   testname: am.AMAccessTokenSim
   
